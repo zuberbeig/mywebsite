@@ -1,0 +1,147 @@
+/* Style the container element */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style the header element */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Style the header h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the navbar element */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the main element */
+.main {
+  padding: 20px;
+}
+
+/* Style the main sections */
+.main section {
+  margin: 20px 0;
+}
+
+/* Style the main section h2 elements */
+.main section h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Style the main section p elements */
+.main section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Style the about section image */
+.about img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Style the resume section lists */
+.resume ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style the resume section list items */
+.resume li {
+  margin: 10px 0;
+}
+
+/* Style the contact section form */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the contact section form labels */
+.contact form label {
+  display: block;
+  width: 80%;
+  margin: 10px 0;
+}
+
+/* Style the contact section form inputs and textarea */
+.contact form input, .contact form textarea {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the contact section form button */
+.contact form button {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #1abc9c;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Style the footer element */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+/* Use media queries to make the layout responsive */
+@media (min-width: 768px) {
+  /* Use flexbox to create a two-column layout for the main content */
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Make the main sections take 50% of the available width */
+  .main section {
+    flex: 0 0 50%;
+  }
+
+  /* Make the resume section lists take 33% of the available width */
+  .resume div {
+    flex: 0 0 33%;
+  }
+}
